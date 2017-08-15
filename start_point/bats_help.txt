@@ -1,0 +1,4 @@
+
+bats help is online at
+https://github.com/sstephenson/bats
+
