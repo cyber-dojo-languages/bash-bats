@@ -1,4 +1,4 @@
-FROM  cyberdojofoundation/bash:4.4.12
+FROM  cyberdojofoundation/bash:4.4.19
 LABEL maintainer=jon@jaggersoft.com
 
 RUN apk add git
