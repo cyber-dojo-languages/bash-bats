@@ -1,4 +1,3 @@
 
 bats help is online at
-https://github.com/sstephenson/bats
-
+https://github.com/bats-core/bats-core#usage
