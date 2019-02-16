@@ -1,9 +1,11 @@
-FROM  cyberdojofoundation/bash
+FROM cyberdojofoundation/bash
 LABEL maintainer=jon@jaggersoft.com
 
-ADD install.sh /
-
-RUN /install.sh && \
-    rm -f /install.sh
+RUN \
+apk add git && \
+git clone https://github.com/bats-core/bats-core.git && \
+cd bats-core && \
+./install.sh /usr/local && \
+apk del git
 
 COPY red_amber_green.rb /usr/local/bin
