@@ -1,8 +1,11 @@
 services: docker
 language: bash
 
+branches:
+  only:
+    - master
+
 script:
-    - if: branch = master
     - SCRIPT=run_build_image.sh
     - curl -O https://raw.githubusercontent.com/cyber-dojo-languages/image_builder/master/${SCRIPT}
     - chmod +x ./${SCRIPT}
