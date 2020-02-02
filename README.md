@@ -1,4 +1,3 @@
-
 [![CircleCI](https://circleci.com/gh/cyber-dojo-languages/bash-bats.svg?style=svg)](https://circleci.com/gh/cyber-dojo-languages/bash-bats)
 
 ## display_name="Bash, bats"
