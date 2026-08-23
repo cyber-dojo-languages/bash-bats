@@ -6,7 +6,7 @@ readonly JSON=`cat docker/image_name.json`
 readonly IMAGE_NAME="${BASH_REMATCH[1]}"
 
 readonly MY_DIR="$( cd "$( dirname "${0}" )" && pwd )"
-readonly EXPECTED=1.13.0
+readonly EXPECTED=1.14.0
 readonly ACTUAL=$(docker run --rm -i ${IMAGE_NAME} sh -c 'bats --version')
 
 if echo "${ACTUAL}" | grep -q "${EXPECTED}"; then
