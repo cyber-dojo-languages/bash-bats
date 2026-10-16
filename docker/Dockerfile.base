@@ -1,9 +1,5 @@
-FROM ghcr.io/cyber-dojo-languages/bash:869fdc6
+FROM ghcr.io/cyber-dojo-languages/bash:65313f0
 LABEL maintainer=jon@jaggersoft.com
 
-RUN \
-apk add git && \
-git clone https://github.com/bats-core/bats-core.git && \
-cd bats-core && \
-./install.sh /usr/local && \
-apk del git
+COPY install.sh .
+RUN ./install.sh && rm ./install.sh
